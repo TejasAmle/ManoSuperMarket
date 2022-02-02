@@ -3,15 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/blue_oval_bg.xml" value="0.2355" />
         <entry key="app/src/main/res/drawable/bottom_white.xml" value="0.2375" />
         <entry key="app/src/main/res/drawable/botton_layout.xml" value="0.1915" />
         <entry key="app/src/main/res/drawable/card_white.xml" value="0.217" />
         <entry key="app/src/main/res/drawable/home_icon.xml" value="0.23" />
         <entry key="app/src/main/res/drawable/light_blue_bg.xml" value="0.15290124511718745" />
+        <entry key="app/src/main/res/drawable/order_list_bg.xml" value="0.2355" />
         <entry key="app/src/main/res/drawable/pop_bg1.xml" value="0.276" />
         <entry key="app/src/main/res/layout-v28/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.334855403348554" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2652200120554551" />
         <entry key="app/src/main/res/layout/bottom_layout.xml" value="0.451030605654173" />
+        <entry key="app/src/main/res/layout/orders_list.xml" value="0.5379560385848432" />
       </map>
     </option>
   </component>
