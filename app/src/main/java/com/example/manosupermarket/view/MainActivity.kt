@@ -1,6 +1,5 @@
 package com.example.manosupermarket.view
 
-import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.os.Bundle
 import android.util.AttributeSet
@@ -9,7 +8,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -20,6 +18,7 @@ import com.example.manosupermarket.network.RetrofitClient
 import com.example.manosupermarket.view.adapter.OrderStatusAdapter
 import com.example.manosupermarket.view.adapter.OrdersAdapter
 import com.example.manosupermarket.viewmodel.MainAcitivityViewModel
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,6 +44,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
         getOrdersList()
+
+        binding.online.setOnClickListener {
+            showToast("Change to offline")
+        }
+
+        binding.whatsapp.setOnClickListener {
+            val launchIntent = packageManager.getLaunchIntentForPackage("com.whatsapp")
+            launchIntent?.let { startActivity(it) }
+        }
 
         binding.bottomLayout.apply {
             homeBt.setOnClickListener {

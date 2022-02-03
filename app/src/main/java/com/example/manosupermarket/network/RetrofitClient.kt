@@ -18,7 +18,7 @@ object RetrofitClient {
 
 
         var retrofit: Retrofit = retrofit2.Retrofit.Builder()
-            .baseUrl("Base URL")
+            .baseUrl("https://mydukaan.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(mOkHttpClient)
             .build()
