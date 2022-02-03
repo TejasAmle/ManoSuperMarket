@@ -9,7 +9,7 @@
     android:layout_marginBottom="12dp">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/order_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/galanogrotesqueregular"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/date_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/galanogrotesqueregular"
@@ -29,9 +29,9 @@
         android:text="Today, 11:11 PM"
         android:textColor="#808080"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="@+id/order_number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
+        app:layout_constraintTop_toTopOf="@+id/order_number" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -39,12 +39,12 @@
         android:layout_height="48dp"
         android:layout_marginTop="14dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/order_number"
         app:layout_goneMarginTop="12dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/items"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -59,19 +59,20 @@
         app:layout_constraintVertical_bias="0.272" />
 
     <TextView
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:fontFamily="@font/galanogrotesqueregular"
         android:lineHeight="16sp"
-        android:layout_marginTop="3dp"
         android:text="₹79"
         android:textColor="#146EB4"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toStartOf="@+id/items"
+        app:layout_constraintTop_toBottomOf="@+id/items" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/pay_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
@@ -84,9 +85,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="@+id/order_number"
+        app:layout_constraintStart_toEndOf="@+id/order_number"
+        app:layout_constraintTop_toTopOf="@+id/order_number"
         app:srcCompat="@drawable/newtag" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
